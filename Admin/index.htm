@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Anket Hazırlama Portalı | Admin Paneli</title>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+			  <script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#tbKayitlar tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Anket Hazırlama Portalı</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Seçenekler</a></li>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Yardım</a></li>
+			<li><a href="../index.htm">Çıkış</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+		  <input id="myInput" class="form-control" type="text" placeholder="Sorgula...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Anasayfa <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Raporlar</a></li>
+            <li><a href="#">Analizler</a></li>
+            <li><a href="#">Dışa Aktar</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Menü1</a></li>
+            <li><a href="">Menü 2</a></li>
+            <li><a href="">Menü 3</a></li>
+            <li><a href="">Menü 4</a></li>
+            <li><a href="">Menü 5</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Menü 6</a></li>
+            <li><a href="">Menü 7</a></li>
+            <li><a href="">Menü 8</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Anasayfa</h1>
+		  <br>
+<h1><center> YÖNETİCİLERİMİZ</center></h1>
+<br>
+<br>
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="1.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Anıl Taşkan</h4>
+              <span class="text-muted">Kurucu ve Yönetici</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Yönetici 2</h4>
+              <span class="text-muted">Yönetici</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Yönetici 3</h4>
+              <span class="text-muted">Yönetici</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Yönetici 4</h4>
+              <span class="text-muted">Yönetici</span>
+            </div>
+          </div>
+
+          <h2 class="sub-header">Oluşturulan Anketlerin Listesi</h2>
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Anket Sorusu</th>
+                  <th>1. Seçenek</th>
+                  <th>2. Seçenek</th>
+                  <th>3. Seçenek</th>
+                  <th>4. Seçenek</th>
+                </tr>
+              </thead>
+			  </table>
+            <table id="tbKayitlar" class="table table-hover">
+                <tr>
+                  <td>Ekonomiden ne kadar anlıyorsunuz?	</td>
+                  <td><a href="#">Çok <span class="badge">50</span></a></td>
+                  <td><a href="#">Az <span class="badge">2</span></td>
+                  <td><a href="#">Hiç Anlamam <span class="badge">5</span></td>
+                  <td><a href="#">Soruyu Beğenmedim <span class="badge">15</span></td>
+                </tr>
+				                <tr>
+                  <td>Asgari Ücretden Memnun Musunuz?	</td>
+                  <td><a href="#">Evet <span class="badge">105</span></a></td>
+                  <td><a href="#">Hayır <span class="badge">25</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
